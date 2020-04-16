@@ -2,7 +2,18 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@section Scripts {
+    <link rel="stylesheet" href="~/css/styles.css" />
+}
+
+    <div class="text-center">
+        <!--A think for this button will be created at a later point 
+            when we get the Login & Create Account page created.-->
+        
+        <div class="home-btns">
+            <a class="btn btn-primary w-50 h-75 font-weight-bold m-1" href="">
+                <div class="home-login">Login</div>
+            </a>
+            <a class="home-create-account btn btn-light text-dark w-50 h-25" href="">Create Account</a>
+        </div>
+    </div>
