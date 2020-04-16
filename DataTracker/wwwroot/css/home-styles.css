@@ -4,9 +4,14 @@
 }
 
 .home-create-account {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 .home-login {
-    padding-top: 18px!important;
+    padding-top: 18px !important;
+}
+
+.profile-pic {
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
 }

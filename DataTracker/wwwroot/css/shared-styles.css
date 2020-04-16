@@ -2,3 +2,15 @@
 body {
     background-color: rgb(35, 4, 69);
 }
+
+.navbar {
+    background-color: rgb(60, 15, 110);
+}
+
+.navbar-brand {
+    color: rgb(90, 237, 110);
+}
+
+.navbar-brand:hover {
+    color: rgb(186, 255, 196);
+}
