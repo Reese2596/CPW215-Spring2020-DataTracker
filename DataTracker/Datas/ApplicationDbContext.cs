@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataTracker.Data
+namespace DataTracker.Datas
 {
     public class ApplicationDbContext : IdentityDbContext
     {
