@@ -19,8 +19,9 @@ namespace DataTracker.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("DataTrackerDbContextConnection")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<DataTrackerDbContext>();
+                /*NEEDS TO BE SOLVED*/
+                //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                    //.AddEntityFrameworkStores<DataTrackerDbContext>();
             });
         }
     }
