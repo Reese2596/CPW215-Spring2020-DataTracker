@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace DataTracker.Datas.Migrations
+namespace DataTracker.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {
