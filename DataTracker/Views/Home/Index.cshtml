@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -11,17 +16,25 @@
     <!--A link for this button will be created at a later point
         when we get the Login & Create Account page created.-->
 
-    <div class="home-btns h-100">
-        <a class="btn btn-primary w-50 h-75 font-weight-bold m-1" asp-action="Login" asp-controller="Account">
-            <div class="home-login h1 pt-1">Login</div>
-        </a>
-        <a class="btn btn-light text-dark w-50 h-25 p-0 mb-5" asp-action="CreateAccount" asp-controller="Account">Create Account</a>
-    </div>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <!--This is where the Data tracker and ChartJS come into play.
+            Probably want a partial view here-->
+    }
+    else
+    {
+        <div class="home-btns h-100">
+            <a class="btn btn-primary w-50 h-75 font-weight-bold m-1" asp-area="Identity" asp-page="/Account/Login">
+                <div class="home-login h1 pt-1">Login</div>
+            </a>
+            <a class="btn btn-light text-dark w-50 h-25 p-0 mb-5" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        </div>
+    }
 
     <h1 class="h1 mt-5">About</h1>
     <hr />
     <p class="paragraph h3 text-light">
-        This website gives users a way to track several different kinds of data and show that data visually through graphs. 
+        This website gives users a way to track several different kinds of data and show that data visually through graphs.
         They can update it at any time and make as many data tracking graphs as they desire.
     </p>
 
