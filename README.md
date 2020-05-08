@@ -1,4 +1,6 @@
 # Data Tracker
+![.NET Core](https://github.com/Reese2596/CPW215-Spring2020-DataTracker/workflows/.NET%20Core/badge.svg)
+
 This is an in-class project to practice source control and get more experience.
 
 It is an ASP.NET Core Web Application. This project is meant for users to be able to track many different types of data over time. 
