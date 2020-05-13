@@ -12,10 +12,6 @@
 }
 
 <div class="text-center">
-    <img class="profile-pic mt-2 mb-1" src="~/imgs/default-profile.png" alt="Profile picture" />
-    <!--A link for this button will be created at a later point
-        when we get the Login & Create Account page created.-->
-
     @if (SignInManager.IsSignedIn(User))
     {
         <!--This is where the Data tracker and ChartJS come into play.
@@ -23,6 +19,7 @@
     }
     else
     {
+        <img class="profile-pic mt-2 mb-1" src="~/imgs/default-profile.png" alt="Profile picture" />
         <div class="home-btns h-100">
             <a class="btn btn-primary w-50 h-75 font-weight-bold m-1" asp-area="Identity" asp-page="/Account/Login">
                 <div class="home-login h1 pt-1">Login</div>
