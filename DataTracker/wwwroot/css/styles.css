@@ -1,6 +1,9 @@
 ﻿
 body {
-    background-color: rgb(35, 4, 69);
+    /* Used a gradient background generator */
+    /* https://cssgradient.io/ */
+    background: rgb(35,4,69);
+    background: linear-gradient(180deg, rgba(35,4,69,1) 0%, rgba(76,47,108,1) 47%, rgba(230,101,42,1) 100%);
 }
 
 .navbar {
