@@ -14,8 +14,7 @@
 <div class="text-center">
     @if (SignInManager.IsSignedIn(User))
     {
-        <!--This is where the Data tracker and ChartJS come into play.
-            Probably want a partial view here-->
+        <partial name="_MainApp.cshtml" />
     }
     else
     {
