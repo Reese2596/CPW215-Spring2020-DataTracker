@@ -1,4 +1,6 @@
 ﻿<!--This code is just to work out how the cards are going to be layed out-->
+<img src="~/imgs/AddButton.png" alt="Create Graph" />
+
 <div class="container bcontent d-flex justify-content-center">
     <div class="card mb-3" style="max-width: 65rem;">
         <div class="row no-gutters">
@@ -9,8 +11,31 @@
                 </div>
             </div>
             <div class="col-sm-7">
-                <img src="https://via.placeholder.com/550x150" /> <!--This is where ChartJS will be for a preview-->
+                <canvas id="myChart"></canvas>
             </div>
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+</script>
