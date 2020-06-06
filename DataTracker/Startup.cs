@@ -41,15 +41,9 @@ namespace DataTracker
 
             services.AddRazorPages();
 
-            //Configure Google Authentication
-            services.AddAuthentication()
-            .AddGoogle(options =>
+            services.Configure<IdentityOptions>(options =>
             {
-                IConfigurationSection googleAuthNSection =
-                    Configuration.GetSection("Authentication:Google");
-
-                options.ClientId = googleAuthNSection["ClientId"];
-                options.ClientSecret = googleAuthNSection["ClientSecret"];
+                options.Password.RequiredLength = 8;
             });
         }
 
