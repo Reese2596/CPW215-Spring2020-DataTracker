@@ -4,10 +4,14 @@
 @{
     ViewData["Title"] = "Log in";
 }
-
+@section Styles{ 
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="1090544712659-d5lm44l183pq8bm6juhgdqv33e0ctt14.apps.googleusercontent.com">
+}
 <h1>@ViewData["Title"]</h1>
 <div class="row text-light">
     <div class="col-md-4">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <section>
             <form id="account" method="post">
                 <h4>Use a local account to log in.</h4>
