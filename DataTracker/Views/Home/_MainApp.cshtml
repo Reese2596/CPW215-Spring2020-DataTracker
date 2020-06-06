@@ -7,18 +7,21 @@
 " />
 </div>
 
-<!--This code is just to work out how the cards are going to be layed out-->
+<!--This code is just to work out how the cards are going to be layed out.-->
+<!--The invisible class is so this "test" code inst visible until we need to tweak it more later-->
 <div class="container bcontent d-flex justify-content-center">
-    <div class="card mb-3" style="max-width: 65rem;">
-        <div class="row no-gutters">
-            <div class="col-sm-5">
-                <h5 class="card-header">Data Title</h5>
-                <div class="card-body">
-                    <p class="card-text">A brief description about the data being tracked here.</p>
+    <div class="invisible">
+        <div class="card mb-3" style="max-width: 65rem;">
+            <div class="row no-gutters">
+                <div class="col-sm-5">
+                    <h5 class="card-header">Data Title</h5>
+                    <div class="card-body">
+                        <p class="card-text">A brief description about the data being tracked here.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-7">
-                <canvas id="myChart"></canvas>
+                <div class="col-sm-7">
+                    <canvas id="myChart"></canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -46,3 +49,4 @@
         options: {}
     });
 </script>
+
