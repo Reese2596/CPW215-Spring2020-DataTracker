@@ -3,7 +3,7 @@
 
 This is an in-class project to practice source control and get more experience.
 
-It is an ASP.NET Core Web Application. This project is meant for users to be able to track money, time, measurments, etc... using bar, line, or pie graphs. The user interface will use Chart.JS to graphically show the users the data they track. Users will be able to create accounts and login to their respective data.
+It is an ASP.NET Core Web Application. This project is meant for users to be able to track money, time, measurements, etc... using bar, line, or pie graphs. The user interface will use Chart.JS to graphically show the users the data they track. Users will be able to create accounts and login to their respective data.
 
 ### Things needed for this project:
 - [Chart.JS](https://www.chartjs.org/)
